@@ -63,7 +63,7 @@ def process_text(file):
             datastr=item[0][0]+' '+item[0][1] +',' + str(item[1]/journal_length*10000)+'\n'
             f.write(datastr)
         print('File done')
-path='/home/aleksei/Документы/SNS-related files/SNS_Studies/ECB Article/Monthly Bulletin/'
+path='' #path to the folder where you stored the PDFs
                     
 for file in os.scandir(path):
     if file.name.endswith('.pdf'):
